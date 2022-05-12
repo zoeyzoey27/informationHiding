@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: clr-loader
+Version: 0.1.7
+Summary: Generic pure Python loader for .NET runtimes
+Home-page: UNKNOWN
+Author: Benedikt Reinartz
+Author-email: filmor@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cffi (>=1.13)
+
+# clr-loader
+
+[![CI](https://github.com/pythonnet/clr-loader/workflows/Python%20Tests/badge.svg)](https://github.com/pythonnet/clr-loader/actions)
+[![Pypi](https://img.shields.io/pypi/v/clr-loader.svg)](https://pypi.org/project/clr-loader/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Implements a generic interface for loading one of the CLR (.NET) runtime implementations and calling simple functions on them.
+
+

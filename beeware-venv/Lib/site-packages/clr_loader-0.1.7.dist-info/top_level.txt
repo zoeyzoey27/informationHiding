@@ -1,0 +1,3 @@
+clr_loader
+netfx-loader-amd64
+netfx-loader-x86
