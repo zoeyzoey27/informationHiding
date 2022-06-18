@@ -237,7 +237,7 @@ class InfomationHiding(toga.App):
         self.second_window.show()
 
     def encoding (self,widget):
-         if self.image_url.value == "" or self.text_input.value == "":
+         if self.image_url.value == "" or self.text_input.value == "" or self.key_input_1.value == "" or self.key_input_2.value == "":
             # self.result_text.text = "Error! Must be filled out completely!"
             self.main_window.error_dialog('Dialog','Error! Must be filled out completely!')
          else:
@@ -292,7 +292,7 @@ class InfomationHiding(toga.App):
             new_img.close()
 
     def decoding (self,widget):    
-         if self.image_url.value == "":
+         if self.image_url.value == "" or self.key_input_1.value == "" or self.key_input_2.value == "":
             # self.result_text.text = "Error! Select file first!"
             self.main_window.error_dialog('Dialog','Error! Must be filled out completely!')
          else:   
@@ -347,7 +347,9 @@ class InfomationHiding(toga.App):
         if self.main_window.confirm_dialog('Dialog', 'Are you sure you want to reset?'):
             self.image_url.value=""
             self.text_input.value=""
-            self.result_text.text = "0%"
+            self.key_input_1.value=""
+            self.key_input_2.value=""
+            self.result_text.text = "Progress: 0%"
             return True
         else:
             return False
